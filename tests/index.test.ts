@@ -1,6 +1,14 @@
 import { expect, test } from "vitest";
-import { myFunction } from "../src";
+import { fetchSSEAnswer } from "../src";
 
-test("myFunction", () => {
-  expect(myFunction()).toBe("Hello, world!");
+export const doCalculate = async () => {
+  const answer = await fetchSSEAnswer("http://0.0.0.0:8080/sse/chat", {
+    query: "Compute the product of 3 and 4",
+  });
+  return answer;
+};
+
+test("doCalculate", async () => {
+  const answer = await doCalculate();
+  expect(answer).toMatch(/^12$/);
 });

@@ -4,7 +4,7 @@ from oxygent import MAS, oxy
 import os
 
 master_prompt = """
-你是一个数学家，能够帮助用户解决数学问题，请为用户提供计算结果。
+你是一个数学家，能够帮助用户解决数学问题，并直接返回计算结果。
 """
 
 oxy_space = [

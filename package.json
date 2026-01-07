@@ -1,6 +1,6 @@
 {
   "name": "@bdsh/ask-oxygent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A starter for creating a TypeScript package.",
   "type": "module",
   "license": "MIT",

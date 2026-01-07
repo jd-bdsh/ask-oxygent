@@ -1,6 +1,6 @@
 {
   "name": "@bdsh/ask-oxygent",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A starter for creating a TypeScript package.",
   "type": "module",
   "license": "MIT",
@@ -36,7 +36,8 @@
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "format": "prettier",
-    "format:check": "prettier --write ."
+    "format:check": "prettier --write .",
+    "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
     "@types/node": "22.19.3",

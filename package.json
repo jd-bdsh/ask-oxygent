@@ -1,6 +1,6 @@
 {
   "name": "@bdsh/ask-oxygent",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A starter for creating a TypeScript package.",
   "keywords": [
     "agent",

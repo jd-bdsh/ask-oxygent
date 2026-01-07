@@ -1,23 +1,36 @@
-# tsdown-starter
+# Ask OxyGent
 
-A starter for creating a TypeScript package.
+A Node.js toolkit for interacting with OxyGent framework
+
+## Usage
+
+```bash
+npm i @bdsh/ask-oxygent
+```
+
+```typescript
+import { fetchSSEAnswer } from "@bdsh/ask-oxygent";
+
+export const doCalculate = async () => {
+  const answer = await fetchSSEAnswer("http://you_ip:host/sse/chat", {
+    query: "Compute the product of 3 and 4",
+  });
+  return answer;
+};
+```
 
 ## Development
 
-- Install dependencies:
+- start the server
 
 ```bash
-npm install
+cd demo/server
+uv run main.py
 ```
 
-- Run the unit tests:
+- start the client
 
 ```bash
-npm run test
-```
-
-- Build the library:
-
-```bash
-npm run build
+cd demo/client
+pnpm test run
 ```

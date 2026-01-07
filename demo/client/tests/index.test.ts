@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
-import { myFunction } from "../src";
+import { doCalculate } from "../src";
 
-test("myFunction", async () => {
-  const answer = await myFunction();
+test("doCalculate", async () => {
+  const answer = await doCalculate();
   expect(answer).toMatch(/^12$/);
 });

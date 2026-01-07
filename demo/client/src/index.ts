@@ -1,8 +1,8 @@
-import { fetchSSEAnswer } from "../../../dist";
+import { fetchSSEAnswer } from "@bdsh/ask-oxygent";
 
-export const myFunction = async () => {
+export const doCalculate = async () => {
   const answer = await fetchSSEAnswer("http://0.0.0.0:8080/sse/chat", {
-    query: `计算 3 和 4 的乘积`,
+    query: "Compute the product of 3 and 4",
   });
   return answer;
 };

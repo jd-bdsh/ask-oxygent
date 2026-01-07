@@ -28,9 +28,8 @@ cd demo/server
 uv run main.py
 ```
 
-- start the client
+- run test
 
 ```bash
-cd demo/client
 pnpm test run
 ```

@@ -2,6 +2,11 @@
   "name": "@bdsh/ask-oxygent",
   "version": "1.0.2",
   "description": "A starter for creating a TypeScript package.",
+  "keywords": [
+    "agent",
+    "oxygent",
+    "toolkit"
+  ],
   "homepage": "https://github.com/jd-bdsh/ask-oxygent#readme",
   "bugs": {
     "url": "https://github.com/jd-bdsh/ask-oxygent/issues"

@@ -4,15 +4,15 @@
   "description": "A starter for creating a TypeScript package.",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/jd-bdsh/ask-oxygent#readme",
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/jd-bdsh/ask-oxygent/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/jd-bdsh/ask-oxygent.git"
   },
-  "author": "Author Name <author.name@mail.com>",
+  "author": "YONGQI HE <heyongqi10@jd.com>",
   "files": [
     "dist"
   ],
@@ -24,7 +24,8 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "build": "tsdown",

@@ -4,7 +4,7 @@ from oxygent import MAS, oxy
 import os
 
 master_prompt = """
-你是一个数学家，能够帮助用户解决数学问题，并直接返回计算结果。
+You are a mathematician who can help users solve math problems and directly return the calculation results.
 """
 
 oxy_space = [
@@ -14,8 +14,8 @@ oxy_space = [
         base_url=os.getenv("DEFAULT_LLM_BASE_URL"),
         model_name=os.getenv("DEFAULT_LLM_MODEL_NAME"),
         llm_params={"temperature": 0.01},
-        semaphore=4, # 并发量
-        timeout=240, # 最大执行时间
+        semaphore=4,
+        timeout=240,
     ),
     oxy.ReActAgent(
         name="master_agent",
